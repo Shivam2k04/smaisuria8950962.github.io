@@ -56,18 +56,24 @@
             <h2>Contact</h2>
             <form>
                 <!--Name-->
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="userName">
+                <br><label for="name" class="form-control form-label">Name</label>
+                <input type="text" id="name" name="userName" autofocus required>
                 <!--email-->
-                <label for="email">Email:</label>
-                <input type="text" id="email" name="userEmail">
+                <br><label for="email" class="form-control form-label">Email</label>
+                <input type="text" id="email" name="userEmail" required>
+                <!--textarea-->
+                <br><label for="textarea" class="form-control form-label">Textarea</label>
+                <input type="text" id="text" name="userText" required placeholder="Enter text here">
+                <!--Dropdown-->
+                <br><label for="dropdown" class="form-control form-label">Choose one option</label>
+                <select name="options" required>
+                    <option value="1">1</option>
+                    <option value="1">1</option>
+                    <option value="1">1</option>
+                    <option value="1">1</option>
+                </select>
                 <!--Button-->
-                <input type="submit" value="Register">
-
-
-
-
-                
+                <br><input type="submit" value="Submit">
             </form>
         </section>
     </aside>
