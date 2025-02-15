@@ -37,7 +37,7 @@
         <section id = "image">
             <h2>Nelson Mandela image</h2>
             <figure>
-                <img src="C:\Users\shivm\OneDrive - Conestoga College\Desktop\IT Support Web Foundations\Assign1-web\images\Nelson_Mandela_1994.jpg" alt="Nelson Mandela, The first president of South Africa">
+                <img src="images/Nelson_Mandela_1994.jpg" alt="Nelson Mandela, The first president of South Africa" height="250">
                 <figcaption>Nelson Rolihlahla Mandela was a South African anti-apartheid activist and politician who served as the first president of South Africa from 1994 to 1999.</figcaption>
             </figure>
         </section>
@@ -45,15 +45,19 @@
         <section id = "famousQuote">
             <h2>Famous Quote of Nelson Mandela</h2>
             <q cite="https://www.lionworldtravel.com/news/8-nelson-mandela-day-quotes#:~:text=%22IT%20ALWAYS%20SEEMS%20IMPOSSIBLE%20UNTIL%20IT%27S%20DONE.%22">
-                "It always seems impossible until it's done."</q>
+                It always seems impossible until it's done.</q>
+                <br>-Nelson Mandela
         </section>
         <!--video source is here in relative path-->
         <section id = "video">
             <h2>Video</h2>
-            <video controls>
-                <source src="C:\Users\shivm\OneDrive - Conestoga College\Desktop\IT Support Web Foundations\Assign1-web\video\Nelson Mandela Biography.mp4" type="video/mp4">
+            <fieldset>
+                <legend>Nelson Mandela Biography Video</legend>
+            <video controls title="Nelson Mandela Biography video">
+                <source src="video/Nelson Mandela Biography.mp4" type="video/mp4">
                 Sorry, your browser does not support videos!
             </video>
+            </fieldset>
         </section>
     </main>
 
@@ -79,7 +83,7 @@
                 <input type="text" id="email" name="userEmail" required>
                 <!--textarea-->
                 <br><label for="message" class="form-control form-label">Message</label>
-                <input type="text" id="text" name="userText" required placeholder="Share your thoughts on Nelson Mandela" style="width: 250px; height: 40px;">
+                <textarea id="text" name="userText" required placeholder="Share your thoughts on Nelson Mandela" style="width: 250px; height: 40px;"></textarea>
                 <!--Dropdown-->
                 <br><label for="dropdown" class="form-control form-label">Choose Country of Residence</label>
                 <select name="options" required>
@@ -89,7 +93,7 @@
                     <option value="Other">Other</option>
                 </select>
                 <!--Button-->
-                <br><input type="submit" value="Submit">
+                <br><button type="submit">Submit</button>
             </form>
         </section>
     </aside>
