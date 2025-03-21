@@ -14,7 +14,8 @@ h1{
 }
 /* element type selector*/
 p{
-    color : blue;
+    color: black;
+    font-size: medium;
 }
 /* element type selector*/
 /* main element style here */
@@ -112,7 +113,7 @@ footer {
     margin-right: 10%;
 }
 #image {
-    float: left;
+    float: right;
     width: 45%; 
 }
 /* Clear property for the next section */
@@ -144,7 +145,7 @@ figcaption {
 }
 /* Video / iframe styling */
 iframe {
-    border: 4px solid darkblue;
+    border: 4px solid darkred;
 }
 /* Headings inside the aside element */
 /* changes Refrences and Contact heading */
@@ -179,7 +180,7 @@ aside label {
 aside input, aside textarea, aside select {
     width: 50%; 
     height: 2rem; 
-    margin: 0 auto 1rem auto; /* Center inputs and add space between them */
+    margin: 0 auto 0.5rem auto; /* Center inputs and add space between them */
     box-sizing: border-box; 
 }
 /* Media query for screens smaller than 768px */
@@ -188,20 +189,17 @@ aside input, aside textarea, aside select {
     html {
         font-size: 16px; /* Decrease the base font size */
     }
-
     /* Remove floats for main and aside */
     #main, #aside {
         float: none;
         width: 100%; 
     }
-
     /* Adjust widths for biography and image sections */
     #biography, #image {
         float: none;
         width: 100%;
         margin: 0; /* Remove margin to avoid overflow */
     }
-
     /* Adjust box model and alignment of form elements */
     aside input, aside textarea, aside select {
         width: 100%; 
