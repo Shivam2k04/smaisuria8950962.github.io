@@ -2,19 +2,32 @@
 Student number: 8950962*/
 
 /* element type selector*/
+/* main element style here */
 h1{
     color: maroon;
     font-size: 40px;
+    font-variant: small-caps;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 /* element type selector*/
 p{
     color : blue;
 }
 /* element type selector*/
+/* main element style here */
 h2{
     font-size: 25px;
     margin-bottom: 15px;
     margin-top: 20px;
+    font-variant: small-caps;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: chocolate;
+    text-align: center;
 }
 /* element type selector*/
 blockquote{
@@ -41,10 +54,6 @@ figcaption, h2{
 /* Child Selector */
 section > h2 {
     color: chocolate;
-}
-/* pseudo class selector*/
-a:hover{
-    color: purple;
 }
 /* Root element */
 html{
@@ -110,5 +119,103 @@ footer {
 #famousQuote {
     clear: both; /* Ensures the quote section starts below the floated elements */
 }
+/* main element style here, <q> element here */
+q {
+    font-variant: normal;
+    font-style: oblique;
+    font-weight: 600;
+    font-family: "Times New Roman", serif;
+    color: green;
+    border: 2px solid black; /* Border shorthand */
+    box-shadow: 5px 5px 0px black, -5px 5px 0px black, 5px -5px 0px black; /* 3-side box shadow */
+}
+/* main element style here, Figure & Image, Video here */
+figure, img, video {
+    border: 4px solid black; /* Border shorthand */
+    border-radius: 12px; /* Rounded corners */
+    background-color: chocolate;
+}
+figcaption {
+    font-variant: small-caps;
+    font-style: oblique;
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+    color: black;
+}
+/* Video / iframe styling */
+iframe {
+    border: 4px solid darkblue;
+}
+/* Headings inside the aside element */
+/* changes Refrences and Contact heading */
+aside h2 {
+    color: maroon; 
+    font-variant: small-caps;
+    text-align: center;
+}
+/* List of links in the aside element */
+aside ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+aside a {
+    text-decoration: none; /* Remove underline from links */
+    color: navy; /* Change font color */
+    line-height: 2.0; /* Increase line height */
+}
+/* pseudo class selector*/
+aside a:hover{
+    color: purple;
+}
+/* Form styles in the aside element */
+aside label {
+    color: darkblue; /* Font color for labels */
+    font-variant: small-caps; /* Font variant for labels */
+    font-weight: bold; /* Font weight for labels */
+    text-align: left; /* Center-align labels */
+    display: block; /* Ensure labels take full width */
+    margin-bottom: 0.5rem; /* Space between labels and inputs */
+}
+aside input, aside textarea, aside select {
+    width: 50%; 
+    height: 2rem; 
+    margin: 0 auto 1rem auto; /* Center inputs and add space between them */
+    box-sizing: border-box; 
+}
+/* Media query for screens smaller than 768px */
+@media (max-width: 800px) {
+    /* Decrease html font size */
+    html {
+        font-size: 16px; /* Decrease the base font size */
+    }
+
+    /* Remove floats for main and aside */
+    #main, #aside {
+        float: none;
+        width: 100%; 
+    }
+
+    /* Adjust widths for biography and image sections */
+    #biography, #image {
+        float: none;
+        width: 100%;
+        margin: 0; /* Remove margin to avoid overflow */
+    }
+
+    /* Adjust box model and alignment of form elements */
+    aside input, aside textarea, aside select {
+        width: 100%; 
+        margin-bottom: 1rem;
+    }
+    /* Center-align form elements */
+    aside form {
+        text-align: center; 
+    }
+    /* Adjust footer alignment */
+    footer {
+        text-align: center;
+    }
+}
+
 
 
