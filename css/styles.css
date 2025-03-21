@@ -1,0 +1,114 @@
+/*Name: Sivam Maisuria
+Student number: 8950962*/
+
+/* element type selector*/
+h1{
+    color: maroon;
+    font-size: 40px;
+}
+/* element type selector*/
+p{
+    color : blue;
+}
+/* element type selector*/
+h2{
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+/* element type selector*/
+blockquote{
+    font-family: sans-serif;
+    font-style: italic;
+}
+/* ID selector*/
+#video{
+    border: 2px solid black;
+}
+/* element type selector*/
+q{
+    font-weight: bold;
+}
+/* Class Selector*/
+/* Makes Nelson Mandela's name bold */
+.author {
+    font-weight: bold;  
+}
+/* Multiple Selector*/
+figcaption, h2{
+    font-style: oblique;
+}
+/* Child Selector */
+section > h2 {
+    color: chocolate;
+}
+/* pseudo class selector*/
+a:hover{
+    color: purple;
+}
+/* Root element */
+html{
+    font: italic normal normal 20px/1.5 sans-serif;
+    background-color: rgb(253, 252, 249);
+}
+/* Body element */
+body {
+    max-width: 2000px; 
+    margin: 2rem; 
+    padding: 1rem; 
+    border: 0.5rem solid maroon;
+    width: 90%; 
+}
+/* General element styles for all elements on the page */
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height */
+}
+/* Make fieldset responsive */
+#video fieldset {
+    width: 100%; /* Allow fieldset to scale with container */
+    border: 1px solid chocolate; /* Optional: Customize the border */
+    padding: 1rem; 
+    box-sizing: border-box; 
+}
+/* Make the video inside fieldset responsive */
+#video video {
+    width: 100%; /* Ensure video takes 100% of the fieldset width */
+    height: auto; 
+    max-width: 100%; 
+    max-height: 100%; 
+}
+/* Layout for the main and aside sections */
+#main {
+    float: left;
+    width: 70%; 
+}
+#aside {
+    float: right;
+    width: 30%;
+}
+/* Clear property for footer */
+footer {
+    clear: both; 
+    text-align: left;
+    font-size: 12px; /* Decreased font size for the footer */
+    background: linear-gradient(chocolate, chocolate); /* Gradient background from green to light green */
+    padding: 12px;
+}
+/* Layout for Biography and Image sections */
+#biography {
+    float: left;
+    width: 45%; 
+    margin-right: 10%;
+}
+#image {
+    float: left;
+    width: 45%; 
+}
+/* Clear property for the next section */
+#famousQuote {
+    clear: both; /* Ensures the quote section starts below the floated elements */
+}
+
+
