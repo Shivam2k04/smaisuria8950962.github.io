@@ -1,7 +1,7 @@
 /*Name: Sivam Maisuria
 Student number: 8950962*/
 
-/* element type selector*/
+/* element type selector for main heading*/
 /* main element style here */
 h1{
     color: maroon;
@@ -17,7 +17,7 @@ p{
     color: black;
     font-size: medium;
 }
-/* element type selector*/
+/* element type selector for subheadings*/
 /* main element style here */
 h2{
     font-size: 25px;
@@ -30,16 +30,16 @@ h2{
     color: chocolate;
     text-align: center;
 }
-/* element type selector*/
+/* element type selector, font modfy for the paragraph qoute*/
 blockquote{
     font-family: sans-serif;
     font-style: italic;
 }
-/* ID selector*/
+/* ID selector, adding solid border*/
 #video{
     border: 2px solid black;
 }
-/* element type selector*/
+/* element type selector, makes qoute font bold */
 q{
     font-weight: bold;
 }
@@ -73,18 +73,18 @@ body {
 * {
     margin: 0;
     padding: 0; 
-    box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height */
+    box-sizing: border-box; 
 }
 /* Make fieldset responsive */
 #video fieldset {
-    width: 100%; /* Allow fieldset to scale with container */
-    border: 1px solid chocolate; /* Optional: Customize the border */
+    width: 100%; /* Allows fieldset to scale with container */
+    border: 1px solid chocolate; 
     padding: 1rem; 
     box-sizing: border-box; 
 }
 /* Make the video inside fieldset responsive */
 #video video {
-    width: 100%; /* Ensure video takes 100% of the fieldset width */
+    width: 100%; 
     height: auto; 
     max-width: 100%; 
     max-height: 100%; 
@@ -102,8 +102,8 @@ body {
 footer {
     clear: both; 
     text-align: left;
-    font-size: 12px; /* Decreased font size for the footer */
-    background: linear-gradient(chocolate, chocolate); /* Gradient background from green to light green */
+    font-size: 12px;
+    background: linear-gradient(chocolate, chocolate); 
     padding: 12px;
 }
 /* Layout for Biography and Image sections */
@@ -157,12 +157,12 @@ aside h2 {
 /* List of links in the aside element */
 aside ul {
     list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
+    padding: 0; 
 }
 aside a {
     text-decoration: none; /* Remove underline from links */
-    color: navy; /* Change font color */
-    line-height: 2.0; /* Increase line height */
+    color: navy; 
+    line-height: 2.0; 
 }
 /* pseudo class selector*/
 aside a:hover{
@@ -170,11 +170,11 @@ aside a:hover{
 }
 /* Form styles in the aside element */
 aside label {
-    color: darkblue; /* Font color for labels */
-    font-variant: small-caps; /* Font variant for labels */
-    font-weight: bold; /* Font weight for labels */
-    text-align: left; /* Center-align labels */
-    display: block; /* Ensure labels take full width */
+    color: darkblue; 
+    font-variant: small-caps; 
+    font-weight: bold; 
+    text-align: left; 
+    display: block; 
     margin-bottom: 0.5rem; /* Space between labels and inputs */
 }
 aside input, aside textarea, aside select {
@@ -187,7 +187,7 @@ aside input, aside textarea, aside select {
 @media (max-width: 800px) {
     /* Decrease html font size */
     html {
-        font-size: 16px; /* Decrease the base font size */
+        font-size: 16px; 
     }
     /* Remove floats for main and aside */
     #main, #aside {
@@ -198,7 +198,7 @@ aside input, aside textarea, aside select {
     #biography, #image {
         float: none;
         width: 100%;
-        margin: 0; /* Remove margin to avoid overflow */
+        margin: 0; 
     }
     /* Adjust box model and alignment of form elements */
     aside input, aside textarea, aside select {
